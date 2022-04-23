@@ -43,7 +43,7 @@ const Details = ({ route, navigation }) => {
   const { data } = route.params;
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.black }}>
       <FocusedStatusBar
         barStyle="dark-content"
         backgroundColor="transparent"
@@ -57,7 +57,7 @@ const Details = ({ route, navigation }) => {
           paddingVertical: SIZES.font,
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "rgba(255,255,255,0.5)",
+          backgroundColor: COLORS.black, // change this to a color that matches the site when i figure out the background color of the list of betters
           zIndex: 1,
         }}
       >
@@ -74,14 +74,16 @@ const Details = ({ route, navigation }) => {
           <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
             <SubInfo />
-            <View style={{ padding: SIZES.font }}>
+            <View
+              style={{ padding: SIZES.font, backgroundColor: COLORS.black }}
+            >
               <DetailsDesc data={data} />
               {data.bids.length > 0 && (
                 <Text
                   style={{
                     fontSize: SIZES.font,
                     fontFamily: FONTS.semiBold,
-                    color: COLORS.primary,
+                    color: COLORS.white,
                   }}
                 >
                   Current Bids

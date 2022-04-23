@@ -30,7 +30,7 @@ const DetailsDesc = ({ data }) => {
           style={{
             fontSize: SIZES.font,
             fontFamily: FONTS.semiBold,
-            color: COLORS.primary,
+            color: COLORS.white,
           }}
         >
           Description
@@ -40,7 +40,7 @@ const DetailsDesc = ({ data }) => {
             style={{
               fontSize: SIZES.small,
               fontFamily: FONTS.regular,
-              color: COLORS.secondary,
+              color: COLORS.gray,
               lineHeight: SIZES.large,
             }}
           >
@@ -50,7 +50,7 @@ const DetailsDesc = ({ data }) => {
               style={{
                 fontSize: SIZES.small,
                 fontFamily: FONTS.semiBold,
-                color: COLORS.primary,
+                color: COLORS.white,
               }}
               onPress={() => {
                 if (!readMore) {

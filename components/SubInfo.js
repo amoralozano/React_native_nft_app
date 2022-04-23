@@ -9,7 +9,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
         style={{
           fontFamily: FONTS.semiBold,
           fontSize: titleSize,
-          color: COLORS.primary,
+          color: COLORS.white,
         }}
       >
         {title}
@@ -18,7 +18,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
         style={{
           fontFamily: FONTS.regular,
           fontSize: subTitleSize,
-          color: COLORS.primary,
+          color: COLORS.white,
         }}
       >
         {subTitle}
@@ -39,7 +39,7 @@ export const EthPrice = ({ price }) => {
         style={{
           fontFamily: FONTS.medium,
           fontSize: SIZES.font,
-          color: COLORS.primary,
+          color: COLORS.white,
         }}
       >
         {price}
@@ -81,19 +81,20 @@ export const EndDate = () => {
       style={{
         paddingHorizontal: SIZES.font,
         paddingVertical: SIZES.base,
-        backgroundColor: COLORS.white,
+        backgroundColor: COLORS.third, // change to white if it ends up looking funky lol
         justifyContent: "center",
         alignItems: "center",
         ...SHADOWS.light,
         elevation: 1,
         maxWidth: "50%",
+        borderRadius: 5,
       }}
     >
       <Text
         style={{
           fontFamily: FONTS.regular,
           fontSize: SIZES.small,
-          color: COLORS.primary,
+          color: COLORS.black,
         }}
       >
         Ending In
@@ -103,7 +104,7 @@ export const EndDate = () => {
         style={{
           fontFamily: FONTS.semiBold,
           fontSize: SIZES.medium,
-          color: COLORS.primary,
+          color: COLORS.black,
         }}
       >
         12h 30m

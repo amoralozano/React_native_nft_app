@@ -10,7 +10,7 @@ const NFTCard = ({ data }) => {
   return (
     <View
       style={{
-        backgroundColor: COLORS.white,
+        backgroundColor: COLORS.black,
         borderRadius: SIZES.font,
         marginBottom: SIZES.extraLarge,
         margin: SIZES.base,
@@ -35,6 +35,7 @@ const NFTCard = ({ data }) => {
       <SubInfo />
       <View style={{ width: "100%", padding: SIZES.font }}>
         <NFTTitle
+          style={{ color: COLORS.white }}
           title={data.name}
           subTitle={data.creator}
           titleSize={SIZES.large}

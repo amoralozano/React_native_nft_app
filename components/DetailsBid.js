@@ -36,7 +36,7 @@ const DetailsBid = ({ bid }) => {
           style={{
             fontFamily: FONTS.regular,
             fontSize: SIZES.small - 2,
-            color: COLORS.primary,
+            color: COLORS.white,
           }}
         >
           {bid.date}

@@ -4,7 +4,7 @@ import { COLORS, FONTS, SIZES, assets } from "../constants";
 
 const HomeHeader = ({ onSearch }) => {
   return (
-    <View style={{ backgroundColor: COLORS.primary, padding: SIZES.font }}>
+    <View style={{ backgroundColor: COLORS.third, padding: SIZES.font }}>
       <View
         style={{
           flexDirection: "row",
@@ -15,7 +15,7 @@ const HomeHeader = ({ onSearch }) => {
         <Image
           source={assets.logo}
           resizeMode="contain"
-          style={{ width: 90, height: 25 }}
+          style={{ width: 75, height: 75, left: 140 }}
         />
         <View style={{ width: 45, height: 45 }}>
           <Image
@@ -39,9 +39,9 @@ const HomeHeader = ({ onSearch }) => {
       <View style={{ marginVertical: SIZES.font }}>
         <Text
           style={{
-            fontFamily: FONTS.regular,
+            fontFamily: FONTS.bold,
             fontSize: SIZES.small,
-            color: COLORS.white,
+            color: COLORS.black,
           }}
         >
           Welcome Back, Angelina 👋
@@ -50,11 +50,11 @@ const HomeHeader = ({ onSearch }) => {
           style={{
             fontFamily: FONTS.bold,
             fontSize: SIZES.large,
-            color: COLORS.white,
+            color: COLORS.black,
             marginTop: SIZES.base / 2,
           }}
         >
-          Lets find Your next NFT
+          Lets find Your next Style!
         </Text>
 
         <View style={{ marginTop: SIZES.font }}>
@@ -62,7 +62,7 @@ const HomeHeader = ({ onSearch }) => {
             style={{
               width: "100%",
               borderRadius: SIZES.font,
-              backgroundColor: COLORS.gray,
+              backgroundColor: COLORS.white,
               flexDirection: "row",
               alignItems: "center",
               paddingHorizontal: SIZES.font,
